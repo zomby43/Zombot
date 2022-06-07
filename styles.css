@@ -1,0 +1,29 @@
+.navbar {
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border: solid red;
+    font-family: sans;
+}
+
+@media (min-width:768px) {
+    .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    }
+}
+
+.fadein{
+    display: none;
+}
+
+section{
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+}
