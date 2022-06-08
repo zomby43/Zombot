@@ -27,3 +27,9 @@ section{
     margin: auto;
     background-color: white;
 }
+
+footer{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
