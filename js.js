@@ -1,13 +1,24 @@
-const btn = document.querySelector('#btn');        
-const radioButtons = document.querySelectorAll('input[name="form"]');
-btn.addEventListener("click", () => {
-    let selectedForm;
-    for (const radioButton of radioButtons) {
-        if (radioButton.checked) {
-            selectedForm = radioButton.value;
-            break;
-        }
+function muerte(){
+    var nombre = document.Muerte.inputName.value
+    var edad = parseInt(document.Muerte.inputEdad.value)
+    random = Math.floor(Math.random() * 50);
+    anniomuerte = 2022 + random
+    edadnueva = edad + random
+
+    if(nombre.length<3){
+        alert("Nombre debe tener 3 o mas caracteres")
+        return false;
     }
-    // show the output:
-    output.innerText = selectedForm ? `You selected ${selectedForm}` : `Selecciona alguna wea po`;
-});
+
+    if (edad < 18 || edad > 100){
+        alert("Edad Invalida")
+        return false
+        }
+
+    cadena = "Vas a morir el año: "+anniomuerte+" a la edad de: "+edadnueva+
+    alert(cadena)
+
+    
+    
+
+}
